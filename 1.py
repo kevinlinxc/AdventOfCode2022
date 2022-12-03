@@ -24,6 +24,5 @@ for index, line in enumerate(lines):
         current = 0
     else:
         current += int(line)
-counts.append(current)
 
 print(sum(sorted(counts, reverse=True)[0:3]))
