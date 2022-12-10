@@ -26,6 +26,7 @@ for line in lines:
     first_half, second_half = line[:length // 2], line[length // 2:]
     prio += priority(letter_in_common(first_half, second_half))
 print(prio)
+# 7795
 
 # part 2
 prio2 = 0
@@ -39,3 +40,4 @@ for index in range(0, len(lines), 3):
             break
 
 print(prio2)
+# 2703

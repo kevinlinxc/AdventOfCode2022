@@ -13,6 +13,7 @@ for index, line in enumerate(lines):
         current += int(line)
 
 print(max_cal)
+# 68442
 
 
 # part 2
@@ -26,3 +27,4 @@ for index, line in enumerate(lines):
         current += int(line)
 
 print(sum(sorted(counts, reverse=True)[0:3]))
+# 203194

@@ -63,6 +63,7 @@ if __name__ == "__main__":
         total_score += score_for_round(them, me)
 
     print(total_score)
+    # 8392
 
     total_score = 0
     for line in lines:
@@ -70,3 +71,4 @@ if __name__ == "__main__":
         them = abc_dict[abc]
         total_score += score_for_round_p2(them, xyz)
     print(total_score)
+    # 10116

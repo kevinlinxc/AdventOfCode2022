@@ -1,5 +1,7 @@
 import fileinput
+
 lines = [line.strip() for line in fileinput.input(files="inputs/7.txt")]
+
 
 class Node:
     def __init__(self, dir_name, parent):
@@ -19,7 +21,7 @@ class Node:
 
 home = Node('/', None)
 current_node = home
-skip = 1 # skip the first line
+skip = 1  # skip the first line
 for index, line in enumerate(lines):
     if skip > 0:
         skip -= 1
@@ -47,7 +49,7 @@ for index, line in enumerate(lines):
             skip += 1
 
 # dfs/ any graph traversal from home to find all nodes with size less than 100k
-
+# note: lots of repeated work here, could memoize but it's fast enough for this input
 stack = [home]
 
 size_less_100k = 0
@@ -59,6 +61,7 @@ while len(stack) > 0:
     for dir_name, node in node.dirs.items():
         stack.append(node)
 print(size_less_100k)
+# 1447046
 
 # part 2
 
@@ -79,3 +82,4 @@ while len(stack) > 0:
         stack.append(node)
 
 print(size_of_smallest_dir_larger_than_threshold)
+# 578710

@@ -27,11 +27,10 @@ for line in lines:
     left_range, right_range = line.split(",")
     ll, lr = left_range.split("-")
     rl, rr = right_range.split("-")
-    if contains(int(ll), int(lr), int(rl), int(rr)):
-        print(line)
     count += contains(int(ll), int(lr), int(rl), int(rr))
 
-# print(count)
+print(count)
+# 475
 
 count2 = 0
 for line in lines:
@@ -41,3 +40,4 @@ for line in lines:
     count2 += overlaps(int(ll), int(lr), int(rl), int(rr))
 
 print(count2)
+# 825

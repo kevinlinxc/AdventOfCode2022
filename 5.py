@@ -70,6 +70,8 @@ for key, value in stack.items():
     end_str += value[-1]
 
 print(end_str)
+# QGTHFZBHV
+print("part 2")
 
 # part 2
 for line in lines:
@@ -85,3 +87,4 @@ for key, value in stack_2.items():
     end_str2 += value[-1]
 
 print(end_str2)
+# MGDMPSZTM

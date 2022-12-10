@@ -1,3 +1,4 @@
+# real easy, just a sliding window with a deque
 import fileinput
 lines = [line.strip() for line in fileinput.input(files="inputs/6.txt")]
 from collections import deque
@@ -20,7 +21,7 @@ for index, char in enumerate(line[3:]):
     else:
         print("bad: " + "".join(list(my_d)))
         my_d.popleft()
-
+# 1855
 
 # part 2, no optimization needed, just do the same thing
 my_d2 = deque()
@@ -38,3 +39,5 @@ for index, char in enumerate(line[14:]):
     else:
         print("bad: " + "".join(list(my_d2)))
         my_d2.popleft()
+
+# 3256
