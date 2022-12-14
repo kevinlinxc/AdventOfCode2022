@@ -72,7 +72,7 @@ screen = part2()
 print(screen)
 x = [x[0] for x in screen]
 y = [y[1] for y in screen]
-
+import matplotlib.pyplot as plt
 
 plt.scatter(x, y)
 plt.show()
